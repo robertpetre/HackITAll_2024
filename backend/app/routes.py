@@ -1,6 +1,7 @@
 from flask import jsonify, request, Blueprint
 from pymongo import *
 
+
 MONGO_URL = 'mongodb://db:27017/'
 DB_NAME = 'hackitall'
 NEWS_COL = 'news'   
