@@ -20,11 +20,11 @@ def index():
         entry["tag"] = tags["tag"]
         news = news_col.find_one({"_id": tags["news_id"]})
         tags_mean_map[entry["tag"]].append(news["sentimentalScore"])
-        tags_title_map[entry["tag"]].append((news["title"], news["isGoodNews"], news["link"]))
+        tags_title_map[entry["tag"]].append((news["title"], news["isGoodNews"], news["link"], news["summary"]))
     for tag in tags_mean_map:
         entry = {}
         entry["tag"] = tag
-        entry["mean"] = sum(tags_mean_map[tag]) / len(tags_mean_map[tag])
+        entry["mean"] = round(sum(tags_mean_map[tag]) / len(tags_mean_map[tag]), 1)
         entry["news"] = tags_title_map[tag]
         tags_list.append(entry)
     return jsonify(tags_list)
