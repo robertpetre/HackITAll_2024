@@ -1,20 +1,32 @@
-import Header from './Components/Header';
-import Companies from './Components/Companies';
-import './app.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./Components/Header";
+import Companies from "./Components/Companies";
+import NewsSentiment from "./Components/NewsSentiment";
+import "./app.css";
 
 function App() {
   return (
-    <div className="h-screen flex flex-col">
-      {/* Header takes 50% of the screen height on large screens, full height on small screens */}
-      <div className="lg:h-4/5 h-full">
-        <Header />
-      </div>
-
-      {/* Companies take 50% of the screen height on large screens, full height on small screens */}
-      <div className="lg:h-1/5 h-fit">
-        <Companies />
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        {/* Home Route */}
+        <Route
+          path="/"
+          element={
+            <div className="h-screen flex flex-col">
+              <div className="lg:h-4/5 h-full">
+                <Header />
+              </div>
+              <div className="lg:h-1/5 h-fit">
+                <Companies />
+              </div>
+            </div>
+          }
+        />
+        {/* Dashboard Route */}
+        <Route path="/dashboard" element={<NewsSentiment />} />
+      </Routes>
+    </Router>
   );
 }
 
