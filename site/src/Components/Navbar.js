@@ -6,9 +6,7 @@ import { HashLink } from "react-router-hash-link";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
-  { name: "Projects", href: "#projects", current: false },
-  { name: "Our Services", href: "#services", current: false },
-  { name: "About Us", href: "#about", current: false },
+  { name: "Dashboard", href: "/dashboard", current: false },
 ];
 
 function classNames(...classes) {
@@ -29,12 +27,10 @@ export default function Navbar({ className }) {
         <>
           <div className="w-full h-fit">
             <div className="relative flex items-center justify-between h-16">
-              {/* Logo */}
               <div className="flex-shrink-0 flex items-center pl-4 lg:pl-8">
-                <h1 className="font-bold text-white">BR33D</h1>
+                <h1 className="font-bold text-white">DailyInsights</h1>
               </div>
 
-              {/* Desktop navigation */}
               <div className="hidden sm:block">
                 <div className="flex justify-center space-x-4">
                   {navs.map((item) => (
@@ -57,7 +53,6 @@ export default function Navbar({ className }) {
                 </div>
               </div>
 
-              {/* Mobile menu button */}
               <div className="inset-y-0 right-0 flex items-center sm:hidden">
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
@@ -69,7 +64,6 @@ export default function Navbar({ className }) {
                 </Disclosure.Button>
               </div>
 
-              {/* Contact button */}
               <div className="hidden sm:flex items-center pr-4 lg:pr-8">
                 <button className="text-white border rounded px-7 py-2 md:px-5 hover:text-white c-btn relative tracking-wider overflow-hidden">
                   <span className="absolute inset-0 bg-gradient-to-br from-[#64f185] to-[#4af063]"></span>
@@ -82,7 +76,6 @@ export default function Navbar({ className }) {
             </div>
           </div>
 
-          {/* Mobile navigation */}
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navs.map((item) => (
