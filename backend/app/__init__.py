@@ -14,6 +14,8 @@ app.register_blueprint(routes, url_prefix='/api')
 news_col = MongoSingleton.get_collection("news")
 tags_col = MongoSingleton.get_collection("tags")
 
+news_col.delete_many({})
+tags_col.delete_many({})
 
 data_folder = os.path.join(os.path.dirname(__file__), 'data')
 if os.path.exists(data_folder):
@@ -23,5 +25,7 @@ if os.path.exists(data_folder):
                 data = json_util.loads(f.read())
             for entry in data:
                 for tag in entry["tags"]:
-                    id = news_col.insert_one({"title": entry["title"], "description": entry["description"], "link": entry["link"], "pubDate": entry["pubDate"]}).inserted_id
+                    news_entry = {**entry}
+                    del news_entry["tags"]
+                    id = news_col.insert_one(news_entry).inserted_id
                     tags_col.insert_one({"tag": tag, "news_id": id})

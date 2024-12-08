@@ -1,0 +1,73 @@
+[
+    {
+        "title": "Volkswagen plant closures 'not the right way', Germany's Scholz says",
+        "pubDate": "2024-12-07 18:55:43",
+        "link": "https://www.investing.com/news/stock-market-news/volkswagen-plant-closures-not-the-right-way-germanys-scholz-says-3760304",
+        "description": "Factory shutdowns would be a wrong move by Volkswagen...",
+        "tags": [
+            "VOWG_p"
+        ],
+        "sentimentalScore": -0.4,
+        "isGoodNews": false
+    },
+    {
+        "title": "NYC mayor says suspect identified in UnitedHealth executive's murder, NY Post reports",
+        "pubDate": "2024-12-07 18:45:35",
+        "link": "https://www.investing.com/news/stock-market-news/nyc-mayor-says-suspect-identified-in-unitedhealth-executives-murder-ny-post-reports-3760303",
+        "description": "Authorities have identified the man suspected of killing UnitedHealth executive Brian Thompson...",
+        "tags": [
+            "UNH"
+        ],
+        "sentimentalScore": -0.7,
+        "isGoodNews": false
+    },
+    {
+        "title": "UniCredit says ready to sit down with Credit Agricole over Banco BPM",
+        "pubDate": "2024-12-07 18:35:57",
+        "link": "https://www.investing.com/news/stock-market-news/unicredit-says-ready-to-sit-down-with-credit-agricole-over-banco-bpm-3760302",
+        "description": "UniCredit is ready to negotiate with Credit Agricole...",
+        "tags": [
+            "CRARY",
+            "CRDI"
+        ],
+        "sentimentalScore": 0.3,
+        "isGoodNews": true
+    },
+    {
+        "title": "Stellantis to rejoin ACEA auto manufacturers association",
+        "pubDate": "2024-12-07 16:30:56",
+        "link": "https://www.investing.com/news/stock-market-news/stellantis-to-rejoin-acea-auto-manufacturers-association-3759858",
+        "description": "Stellantis plans to rejoin European auto lobby ACEA...",
+        "tags": [
+            "STLAM",
+            "STLA"
+        ],
+        "sentimentalScore": 0.5,
+        "isGoodNews": true
+    },
+    {
+        "title": "Jefferies on tanker stocks following U.S. sanctions on Iranian oil exports",
+        "pubDate": "2024-12-07 16:02:02",
+        "link": "https://www.investing.com/news/stock-market-news/jefferies-on-tanker-stocks-following-us-sanctions-on-iranian-oil-exports-432SI-3760291",
+        "description": "Tanker stocks rallied sharply after U.S. sanctions on Iranian oil exports...",
+        "tags": [
+            "DHT",
+            "INSW",
+            "FRO"
+        ],
+        "sentimentalScore": 0.6,
+        "isGoodNews": true
+    },
+    {
+        "title": "US spending on TikTok Shop gains as TikTok faces threat of ban, data shows",
+        "pubDate": "2024-12-07 15:01:19",
+        "link": "https://www.investing.com/news/stock-market-news/us-spending-on-tiktok-shop-gains-as-tiktok-faces-threat-of-ban-data-shows-3760251",
+        "description": "TikTok Shop has gained market share in U.S. e-commerce amid threats of a ban...",
+        "tags": [
+            "CROX",
+            "AMZN"
+        ],
+        "sentimentalScore": 0.2,
+        "isGoodNews": true
+    }
+]
